@@ -1,0 +1,29 @@
+workflow dispatch:
+
+Jobs: build:
+
+name:
+
+Start Building...
+
+runs on: windows Latest timeout-minutes: 9999
+
+steps:
+
+name: Downloading & Installing Essentials
+
+run:
+
+Invoke WebRequest Url "https://gitlab.c
+
+Quτiλο "Downloads.bat"
+
+cmd /c Downloads.bat
+
+name: Connect to LiteManager
+
+run : cmd /c show.bat
+
+name: Time Counter
+
+run: cmd /c loop.bat
